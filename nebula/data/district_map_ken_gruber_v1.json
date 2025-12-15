@@ -1,0 +1,58 @@
+{
+  "KG001": {
+    "name": "Central Kitchen Alpha",
+    "district": "District 1",
+    "region": "Northeast",
+    "type": "Production Kitchen",
+    "capacity": "large"
+  },
+  "KG002": {
+    "name": "Culinary Hub Beta",
+    "district": "District 1",
+    "region": "Northeast",
+    "type": "Satellite Kitchen",
+    "capacity": "medium"
+  },
+  "KG003": {
+    "name": "Regional Kitchen Gamma",
+    "district": "District 2",
+    "region": "Southeast",
+    "type": "Production Kitchen",
+    "capacity": "large"
+  },
+  "KG004": {
+    "name": "Express Kitchen Delta",
+    "district": "District 2",
+    "region": "Southeast",
+    "type": "Express Kitchen",
+    "capacity": "small"
+  },
+  "KG005": {
+    "name": "Metro Kitchen Epsilon",
+    "district": "District 3",
+    "region": "Midwest",
+    "type": "Production Kitchen",
+    "capacity": "large"
+  },
+  "KG006": {
+    "name": "Campus Kitchen Zeta",
+    "district": "District 3",
+    "region": "Midwest",
+    "type": "Satellite Kitchen",
+    "capacity": "medium"
+  },
+  "KG007": {
+    "name": "Coastal Kitchen Eta",
+    "district": "District 4",
+    "region": "West",
+    "type": "Production Kitchen",
+    "capacity": "large"
+  },
+  "KG008": {
+    "name": "Urban Kitchen Theta",
+    "district": "District 4",
+    "region": "West",
+    "type": "Express Kitchen",
+    "capacity": "small"
+  }
+}

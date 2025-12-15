@@ -1,0 +1,58 @@
+{
+  "version": "1.0",
+  "description": "Inventory sorting and location assignment rules",
+  "location_rules": {
+    "categories": [
+      {
+        "category": "Produce",
+        "location": "COOLER-1"
+      },
+      {
+        "category": "Dairy",
+        "location": "COOLER-2"
+      },
+      {
+        "category": "Meat",
+        "location": "FREEZER-1"
+      },
+      {
+        "category": "Seafood",
+        "location": "FREEZER-2"
+      },
+      {
+        "category": "Dry Goods",
+        "location": "DRY-STORAGE"
+      }
+    ],
+    "keywords": [
+      {
+        "keywords": ["lettuce", "tomato", "onion", "pepper", "carrot"],
+        "location": "COOLER-1"
+      },
+      {
+        "keywords": ["milk", "cheese", "yogurt", "butter", "cream"],
+        "location": "COOLER-2"
+      },
+      {
+        "keywords": ["chicken", "beef", "pork", "turkey"],
+        "location": "FREEZER-1"
+      },
+      {
+        "keywords": ["fish", "shrimp", "salmon", "tuna", "cod"],
+        "location": "FREEZER-2"
+      },
+      {
+        "keywords": ["flour", "sugar", "rice", "pasta", "cereal"],
+        "location": "DRY-STORAGE"
+      },
+      {
+        "keywords": ["oil", "vinegar", "sauce", "seasoning", "spice"],
+        "location": "DRY-STORAGE"
+      }
+    ]
+  },
+  "validation_rules": {
+    "required_fields": ["item_code", "description"],
+    "max_description_length": 200
+  }
+}
