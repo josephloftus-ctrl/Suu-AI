@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "nebula-engine"
-version = "0.3.0"
+version = "0.6.0"
 description = "AI-Powered Kitchen Operating System for CulinArt/Compass Group"
 readme = "README.md"
 license = {text = "MIT"}
@@ -13,6 +13,22 @@ dependencies = [
     "pandas>=2.0.0",
     "openpyxl>=3.1.0",
     "pydantic>=2.0.0",
+    "fastapi>=0.109.0",
+    "uvicorn[standard]>=0.27.0",
+    "python-multipart>=0.0.6",
+]
+authors = [
+    {name = "Nebula Team", email = "nebula@culinart.com"}
+]
+keywords = ["inventory", "kitchen", "automation", "culinary"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
 ]
 
 [project.optional-dependencies]
@@ -23,6 +39,12 @@ nebula = "nebula.cli:main"
 
 [tool.hatch.build.targets.wheel]
 packages = ["nebula"]
+
+[tool.hatch.build.targets.wheel.force-include]
+"nebula/config/inventory_rules.json" = "nebula/config/inventory_rules.json"
+"nebula/data/district_map_ken_gruber_v1.json" = "nebula/data/district_map_ken_gruber_v1.json"
+"nebula/templates/ordermaestro/.gitkeep" = "nebula/templates/ordermaestro/.gitkeep"
+"nebula/exports/.gitkeep" = "nebula/exports/.gitkeep"
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
